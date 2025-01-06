@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Services page of Snazzy Paws Grooming">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Contact - Snazzy Paws Grooming</title>
+</head>
+<body>
+    <div class="navigation">
+        <img src="images/main_logo.png" alt="Snazzy Paws Grooming logo" id="main_logo">
+        <nav class="topnav" aria-label="Primary Navigation">
+            <a href="index.html">Main page</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="booking.html">Booking</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="nav_mobile_main">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" aria-label="Toggle mobile navigation menu">
+            <img src="images/hamburger_menu.png" alt="hamburger menu button" id="hamburger_menu">
+            </label>
+            <div class="nav-mobile" role="menu" aria-label="Mobile Navigation Menu">
+                <a href="index.html">Main page</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="booking.html">Booking</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </div>
+
+    <header class="header">
+        <h1>Contact us</h1>
+    </header>
+
+    <main>
+        <section aria-labelledby="contact_info">
+            <div class="row-contact">
+                <div class="column-contact">
+                    <p><b>Phone: </b><a href="tel:0211234567" aria-label="Phone Number">021 123 4567</a></p>
+                    <p><b>Email: </b><a href="mailto:snazzypaws@snazzypaws.co.nz" aria-label="Email Address">snazzypaws@snazzypaws.co.nz</a></p>
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2575.954335161071!2d175.27861990344996!3d-37.78755532190194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d18a5e4e15453%3A0x5e424381b9fd93e3!2s154%20Ward%20Street%2C%20Hamilton%20Central%2C%20Hamilton%203204!5e0!3m2!1sen!2snz!4v1736121651428!5m2!1sen!2snz" width="500" height="355" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Google Map showing location of Snazzy Paws Grooming"></iframe>
+                </div>
+                <div class="column-contact">
+                    <h2 class="center">Opening hours:</h2>
+                    <table aria-label="Business Hours">
+                        <tr>
+                            <td>Monday</td>
+                            <td>9am - 5pm</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>9am - 5pm</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>9am - 5pm</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>9am - 5pm</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>9am - 5pm</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>9am - 5pm</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="message_form">
+            <div class="row-contact-middle">
+                <div class="column-contact">
+                    <h2 class="center">Send us a message:</h2>
+                    <form method="POST" action="" id="contact_form" aria-labelledby="message_form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" minlength="3" maxlength="50" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" minlength="5" maxlength="50" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" name="phone" id="phone" minlength="5" maxlength="25" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" minlength="10" maxlength="3000" required aria-required="true"></textarea>
+                        </div>
+                        <input type="submit" name="submit" value="Send Message">
+                    </form>
+                </div>
+                <div class="column-contact">
+                    <img src="images/contact1.jpg" alt="a dog holding a flower" width="470">
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="faq">
+            <div class="row-contact">
+                <div class="column-contact">
+                    <img src="images/contact2.jpg" alt="a dog in an autumn forest" id="contact_image">
+                </div>
+                <div class="column-contact">
+                    <h2 class="center">Frequently Asked Questions:</h2>
+                    <div id="faq_section">
+                        <div class="faq-item">
+                            <h3>How long does a typical grooming session take?</h3>
+                            <p>A basic bath and brush takes 1-2 hours, while a full grooming package takes 2-3 hours. We'll provide a more accurate estimate when you book based on your dog's specific needs.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>Do you offer special services for puppies or senior dogs?</h3>
+                            <p>Yes! We have puppy packages ($30-$60) and senior dog packages ($40-$80). Both include gentle handling and care tailored to your dog's age and needs.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>What's included in your Full Grooming Package?</h3>
+                            <p>Our Full Grooming Package ($60-$120) includes:</p>
+                            <ul>
+                                <li>Bath with premium shampoo</li>
+                                <li>Professional haircut</li>
+                                <li>Nail trim and ear cleaning</li>
+                                <li>Teeth brushing</li>
+                            </ul>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>How often should I get my dog groomed?</h3>
+                            <p>Grooming frequency varies by breed and coat type:</p>
+                            <ul>
+                                <li>Short-haired breeds: Every 6-8 weeks</li>
+                                <li>Long-haired breeds: Every 4-6 weeks</li>
+                                <li>Continuously growing hair: Every 3-4 weeks</li>
+                            </ul>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>Do you offer any special treatments?</h3>
+                            <p>Yes, we offer medicated baths ($20-$40 additional), de-shedding treatments ($20-$40), and flea treatments ($15-$30). Please mention any special requirements when booking.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="column-three">
+                <p class="center">Social media links:</p>
+                <div class="footer-logos" aria-label="Social Media Links">
+                    <a href="https://www.facebook.com/"><img src="images/facebook_logo.png" alt="Facebook logo" height="30" class="image_socials"></a>
+                    <a href="https://www.instagram.com/"><img src="images/instagram_logo.png" alt="Instagram logo" height="30" class="image_socials"></a>
+                    <a href="https://www.tiktok.com/"><img src="images/tiktok_logo.png" alt="Tiktok logo" height="30" class="image_socials"></a>
+                </div>
+            </div>
+            <div class="column-three" id="footer_nav" role="navigation" aria-label="Footer Navigation">
+                <p class="center">Other pages:</p>
+                <a href="index.html">Main page</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="booking.html">Booking</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="column-three">
+                <p class="center">Contacts &amp; business hours:</p>
+                <a href="tel:0211234567" aria-label="Phone Number">021 123 4567</a>
+                <a href="mailto:snazzypaws@snazzypaws.co.nz" aria-label="Email Address">snazzypaws@snazzypaws.co.nz</a>
+                <p>154 Ward Street, Hamilton</p>
+                <p>Open Mon - Sat, 9am - 5pm</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

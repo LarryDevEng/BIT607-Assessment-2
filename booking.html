@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Services page of Snazzy Paws Grooming">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Booking - Snazzy Paws Grooming</title>
+</head>
+<body>
+    <div class="navigation">
+        <img src="images/main_logo.png" alt="Snazzy Paws Grooming logo" id="main_logo">
+        <nav class="topnav" aria-label="Primary Navigation">
+            <a href="index.html">Main page</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="booking.html">Booking</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="nav_mobile_main">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" aria-label="Toggle mobile navigation menu">
+            <img src="images/hamburger_menu.png" alt="hamburger menu button" id="hamburger_menu">
+            </label>
+            <div class="nav-mobile" role="menu" aria-label="Mobile Navigation Menu">
+                <a href="index.html">Main page</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="booking.html">Booking</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </div>
+
+    <header class="header">
+        <h1>Booking form</h1>
+    </header>
+
+    <main>
+        <section>
+            <div id="booking_form" aria-labelledby="booking_form">
+                <h2>Book Your Dog's Grooming Appointment</h2>
+                <form method="POST" action="">
+                    <div class="form-group">
+                        <label for="owner_name">Owner's Name</label>
+                        <input type="text" name="owner_name" id="owner_name" minlength="5" maxlength="50" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone" minlength="5" maxlength="25" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" minlength="5" maxlength="50" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="dog_name">Dog's Name</label>
+                        <input type="text" name="dog_name" id="dog_name" minlength="5" maxlength="50" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="dog_breed">Dog's Breed</label>
+                        <input type="text" name="dog_breed" id="dog_breed" minlength="5" maxlength="50" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="dog_age">Dog's Age</label>
+                        <input type="number" name="dog_age" id="dog_age" min="0" max="30" required aria-required="true">
+                    </div>
+                    <input type="submit" name="submit" value="Book Appointment">
+                </form>
+            </div>
+        </section>
+        
+        <section>
+            <div id="booking_instructions" aria-labelledby="booking_instructions">
+                <h2>Booking form instructions:</h2>
+                <ul>
+                    <li>All fields are required - you won't be able to submit the form without completing them</li>
+                    <li>Owner's Name:
+                        <ul>
+                            <li>Must be between 5-50 characters long</li>
+                            <li>Please enter your full name as it appears on your ID</li>
+                        </ul>
+                    </li>
+                    <li>Phone:
+                        <ul>
+                            <li>Must be between 5-25 characters long</li>
+                        </ul>
+                    </li>
+                    <li>Email:
+                        <ul>
+                            <li>Must be a valid email format (example@domain.com)</li>
+                            <li>This will be used for booking confirmation and updates</li>
+                        </ul>
+                    </li>
+                    <li>Dog's Name:
+                        <ul>
+                            <li>Must be between 5-50 characters long</li>
+                            <li>Please use the name your dog responds to</li>
+                            <li>This helps us communicate better with your pet during grooming</li>
+                        </ul>
+                    </li>
+                    <li>Dog's Breed:
+                        <ul>
+                            <li>Must be between 5-50 characters long</li>
+                            <li>Please be as specific as possible (e.g., "Miniature Poodle" rather than just "Poodle")</li>
+                        </ul>
+                    </li>
+                    <li>Dog's Age:
+                        <ul>
+                            <li>Must be between 0-30 years</li>
+                            <li>For puppies under 1 year, please enter 0</li>
+                        </ul>
+                    </li>
+                    <li>Additional Notes:
+                        <ul>
+                            <li>After submission, you will receive a confirmation email</li>
+                            <li>Please allow up to 24 hours for us to process your booking request</li>
+                            <li>If you need to make changes after submitting, please contact us directly</li>
+                            <li>For emergency bookings, please call us instead of using the online form</li>
+                            <li>We may need to contact you for additional information about your dog's specific grooming needs</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="column-three">
+                <p class="center">Social media links:</p>
+                <div class="footer-logos" aria-label="Social Media Links">
+                    <a href="https://www.facebook.com/"><img src="images/facebook_logo.png" alt="Facebook logo" height="30" class="image_socials"></a>
+                    <a href="https://www.instagram.com/"><img src="images/instagram_logo.png" alt="Instagram logo" height="30" class="image_socials"></a>
+                    <a href="https://www.tiktok.com/"><img src="images/tiktok_logo.png" alt="Tiktok logo" height="30" class="image_socials"></a>
+                </div>
+            </div>
+            <div class="column-three" id="footer_nav" role="navigation" aria-label="Footer Navigation">
+                <p class="center">Other pages:</p>
+                <a href="index.html">Main page</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="booking.html">Booking</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="column-three">
+                <p class="center">Contacts &amp; business hours:</p>
+                <a href="tel:0211234567" aria-label="Phone Number">021 123 4567</a>
+                <a href="mailto:snazzypaws@snazzypaws.co.nz" aria-label="Email Address">snazzypaws@snazzypaws.co.nz</a>
+                <p>154 Ward Street, Hamilton</p>
+                <p>Open Mon - Sat, 9am - 5pm</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
